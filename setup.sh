@@ -5,8 +5,8 @@ yum -y update
 
 # JDK1.8
 cd /opt/
-wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u45-b14/jdk-8u45-linux-x64.rpm" -O jdk-8u45-linux-x64.rpm
-yum -y --nogpgcheck localinstall jdk-8u45-linux-x64.rpm
+wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u101-b13/jdk-8u101-linux-x64.rpm" -O jdk-8u101-linux-x64.rpm
+yum -y --nogpgcheck localinstall jdk-8u101-linux-x64.rpm
 echo "export JAVA_HOME=/usr/java/default" > /etc/profile.d/jdk.sh
 source /etc/profile.d/jdk.sh
 
